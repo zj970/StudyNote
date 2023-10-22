@@ -56,3 +56,4 @@ idea64.vmoptions配置文件
  - checkStyle-IDEA 
  - Alibaba Java Conding...
  - MyBatisX
+ - Rainbow Brackets

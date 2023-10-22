@@ -34,3 +34,25 @@ scp【本地或远程文件的路径】【服务器用户名】@【服务器地�
 -P port：注意是大写的P, port是指定数据传输用到的端口号
 -S program： 指定加密传输时所使用的程序。此程序必须能够理解ssh(1)的选项。
 
+
+nmcl 命令常用(需要下载netowrkmanager)
+
+
+
+```shell
+# 显示连接情况
+nmcli connection show 
+# 开启wifi
+nmcli radio wifi on
+# 识别wifi接入点
+
+nmcli device wifi list
+
+# 链接wifi
+
+ncmli device wifi connection SSID password ""
+# 显示链接
+nmcli connection show
+# 切换
+nmcli connect connection down/up UUID
+```
