@@ -56,3 +56,9 @@ nmcli connection show
 # 切换
 nmcli connect connection down/up UUID
 ```
+
+# 挂载网络文件
+
+```shell
+sudo mount.cifs -o username=admin,password="P@ssw0rd",uid=test,gid=test,dir_mode=0777 //172.20.10.20/test share
+```
