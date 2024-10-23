@@ -7,8 +7,8 @@ idea64.vmoptions配置文件
 -Xmx8192m
 -XX:NewSize=4096m
 -XX:MaxNewSize=4096m
--XX:MaxMetaspaceSize=512m
--XX:ReservedCodeCacheSize=512m
+-XX:MaxMetaspaceSize=2048m
+-XX:ReservedCodeCacheSize=2048m
 -XX:+UseG1GC
 -XX:SoftRefLRUPolicyMSPerMB=50
 -XX:CICompilerCount=2

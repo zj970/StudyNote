@@ -8,8 +8,20 @@
  * data: 2022/07/09 21：14
 ****************************************************************************/
 #include <stdio.h>
+
+#if defined(_WIN32) || defined(_WIN64)
 #include <winsock.h>
 #pragma comment(lib, "ws2_32.lib") 
+#elif defined(__linux__) || defined(__unix__)
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+#include <unistd.h>
+#define CLOSE_SOCKET close
+#define SOCKET_ERROR (-1)
+#else
+#error "Unsupported platform"
+#endif
 #define PORT 8888  
                                
 int main(){
