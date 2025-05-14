@@ -57,3 +57,47 @@ sudo rm /var/lib/pacman/db.lck
 sudo pacman -S i2c-tools
 
 sudo i2cdetect -l
+
+## 一些操作
+
+```shell
+# 关闭暂停和休眠模式
+sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+
+# 开启暂停和休眠模式
+sudo systemctl unmask sleep.target suspend.target hibernate.target hybrid-sleep.target
+
+# 查看状态
+
+sudo systemctl unmask status.target suspend.target hibernate.target hybrid-sleep.target
+
+```
+
+## 学习资料
+
+- Arch Linux 官方网站
+网址：https://www.archlinux.org
+这是 Arch Linux 的官方网站，提供了最新的新闻、发布公告和下载链接。
+
+- Arch Wiki
+网址：https://wiki.archlinux.org
+Arch Wiki 是一个详尽的知识库，涵盖了从安装、配置到故障排除的各种信息。它是 Arch 用户的必备资源。
+
+- Arch Linux Forums
+网址：https://bbs.archlinux.org
+Arch Linux 用户的交流社区。你可以在这里提问、分享经验和解决问题。
+
+- Arch Linux reddit
+网址：https://www.reddit.com/r/archlinux/
+一个活跃的 Arch Linux 社区，用户在这里分享新闻、教程和经验。
+    
+- Arch Linux User Repository (AUR)
+网址：https://aur.archlinux.org/
+AUR 是由用户维护的存储库，包含了大量社区贡献的软件包。了解如何使用 AUR 是 Arch 用户的重要技能。 
+
+
+## 日记
+
+- 2025-05-14  Nvidia 显卡相关 
+
+https://bbs.archlinux.org/viewtopic.php?id=295724
